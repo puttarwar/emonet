@@ -1,0 +1,8 @@
+include src/emonet/pretrained/*.pth
+recursive-include src/emonet/pretrained *.pth
+include src/emonet/pickles/*.pkl
+recursive-include src/emonet/pickles *.pkl
+include src/emonet/images/*.png
+recursive-include src/emonet/images *.png
+include src/emonet/images/*.gif
+recursive-include src/emonet/images *.gif

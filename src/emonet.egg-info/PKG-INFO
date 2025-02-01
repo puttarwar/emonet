@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: emonet
+Version: 0.0.1
+Summary:  Emotion recognition using https://github.com/face-analysis/emonet
+Home-page: https://github.com/puttarwar/emonet
+Author: Param Uttarwar
+Author-email: param.uttarwar@casablanca.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: PyQt5
+Requires-Dist: opencv-python-headless
+Requires-Dist: torch
+
+# Estimation of continuous valence and arousal levels from faces in naturalistic conditions, Nature Machine Intelligence 2021
+
+Official implementation of the paper _"Estimation of continuous valence and arousal levels from faces in naturalistic conditions"_, Antoine Toisoul, Jean Kossaifi, Adrian Bulat, Georgios Tzimiropoulos and Maja Pantic, published in Nature Machine Intelligence, January 2021 [[1]](#Citation).
+Work done in collaboration between Samsung AI Center Cambridge and Imperial College London.
+
+Please find a full-text, view only, version of the paper [here](https://rdcu.be/cdnWi).
+
+The full article is available on the [Nature Machine Intelligence website](https://www.nature.com/articles/s42256-020-00280-0).
+
+## Youtube Video
+
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=J8Skph65ghM">Automatic emotion analysis from faces in-the-wild
+  <br>
+  <img src="https://img.youtube.com/vi/J8Skph65ghM/0.jpg"></a>
+</p>
+
+## Installation
+```bash
+pip install git+https://github.com/puttarwar/emonet.git
+
+```
+
+## Usage
+
+### Testing the pretrained models on an video
+Detects the first detected face in a video and predicts their emotion, valence, arousal and facial landmarks.
+
+```python
